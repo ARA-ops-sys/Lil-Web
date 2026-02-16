@@ -1,41 +1,34 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
+/* HEADER CONTAINER */
 .header {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  padding: 20px 0;
+  justify-content: center; /* center nav horizontally */
+  align-items: center;     /* vertically center nav */
+  position: relative;      /* for absolute logo positioning */
+  height: 80px;            /* fixed header height */
   background-color: #111;
 }
 
+/* LOGO */
 .logo {
-  position: absolute;
-  left: 32px;
-  top 20px;
-  font-family:'Lobster', cursive;
+  position: absolute;      /* remove from normal flow */
+  left: 32px;              /* distance from left */
+  top: 50%;                /* vertically center relative to header */
+  transform: translateY(-50%); /* perfect vertical centering */
+  font-family: 'Lobster', cursive;
   font-size: 36px;
-  color: white;
-  
 }
 
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+/* NAV LINKS */
 .nav a {
   color: white;
   text-decoration: none;
-  margin: 20px;
+  margin: 0 20px;
   font-size: 18px;
-}
-
-.nav a:hover {
-  text-decoration:underline;
-}
-
-.logo img {
-  height:40px;
-  width: auto;
 }
 
 .nav a:hover {
