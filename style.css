@@ -5,23 +5,32 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding: 20px 0;
   background-color: #111;
 }
 
 .logo {
+  position: absolute;
+  left: 32px;
+  top 20px;
+  font-family:'Lobster', cursive;
+  font-size: 36px;
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+  
 }
 
 .nav a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 16px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  text-decoration:underline;
 }
 
 .logo img {
